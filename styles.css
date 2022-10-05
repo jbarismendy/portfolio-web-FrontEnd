@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER STYLE*/
+#cabecera {
+    height: 350px;
+    background: rgb(45,67,192);
+    background: radial-gradient(circle, rgba(45,67,192,1) 0%, rgba(1,1,47,1) 70%);
+    color: #ffffff;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-items a {
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-items li a:hover {
+    color: #f0a004;
+    transition: .4s;
+}
+.menu-items {
+    display: flex;
+    list-style: none;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+.header-container ul li a {
+    display: block;
+}
+.btn-menu {
+    align-self: center;
+    margin-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+.btn-menu i:hover {
+    color: #f0a004;
+    transition: .4s;
+}
+
+#cabecera h1, #cabecera p { 
+    text-align: center;
+    position: relative;
+    top: -35px;
+}
+
+#cabecera p {
+    top: -45px;
+}
+
+#logo-ap {
+    height: 100px;
+}
+
+/* FOTO REDONDEADA DE PERFIL DE JUAN*/
+#foto-juan {
+    display: block;
+    margin: 0px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+}
+/* NAV STYLE*/
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #D5D8DC;
+    justify-content: space-evenly;
+}
+.nav-container a {
+    color: #01012f;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.row-4 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 1px solid rgb(240,160,4);
+    border-left: 1px solid rgb(240,160,4);
+    border-right: 1px solid rgb(240,160,4);
+    width: 150px;
+    text-align: center;
+}
+
+.row-4:hover {
+    background: rgb(240,160,4);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 1px solid #D5D8DC;
+    transition: 0.1s;
+}
+
+.row-4:hover a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* COLORES
+010166
+#1F618D 
+#D5D8DC
+#F1C40F
+#FFD700
+
+#01012f
+#010166
+#00d4ff
+
+#000080  NAVY
+#ffa500  ORANGE
+*/
+
+/* BODY STYLE*/
+.principal {
+    display: flex;
+    background: rgb(240,160,4);
+    background: linear-gradient(180deg, rgba(240,160,4,1) 0%, rgba(241,196,15,1) 35%, rgba(255,255,255,1) 100%);
+    padding: 10px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.proyecto-1, .proyecto-2, .proyecto-3 {
+    border: 1px solid #000080;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.actualidad {
+    display: flex;
+    width: 30%;
+    background-color: #D5D8DC;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* FOOTER STYLE*/
+footer {
+    display: flex;
+    justify-content: center;
+    background: rgb(45,67,192);
+    background: radial-gradient(circle, rgba(45,67,192,1) 0%, rgba(1,1,47,1) 70%);
+    text-decoration: none;
+}
+.social-media {
+    display: none;
+}
+
+@media screen and (max-widht: 990px){
+    .row-4{
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* hay que modificar (NAV CONTAINER) */
+}
+    
+@media screen and (max-width: 450px){
+    .header-container ul li a {
+        display: none;
+    }
+    .social-media {
+        display: inline;
+    }
+    #foto-juan {
+        height: 150px;
+        width: 150px;
+        top: 10px;
+    }
+    #cabecera h1, #cabecera p {
+        top: 10px;
+    }
+    #cabecera p {
+        top: 0vw;
+    }
+    #logo-ap {
+        height: 70px;
+    }
+}
